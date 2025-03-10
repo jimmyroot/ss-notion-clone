@@ -9,6 +9,9 @@ import { useDocumentData } from "react-firebase-hooks/firestore"
 import Editor from "./Editor"
 import useOwner from "@/lib/useOwner"
 import DeleteDocument from "./DeleteDocument"
+import InviteUser from "./InviteUser"
+import ManageUsers from "./ManageUsers"
+import Avatars from "./Avatars"
 
 function Document({ id }: { id: string }) {
   
@@ -49,17 +52,19 @@ function Document({ id }: { id: string }) {
                   <>
                   {/* Invite User */}
                   {/* Delete Document */}
+                  <InviteUser />
                   <DeleteDocument />
                   </>
                 )}
 
-                {/* If is Owner, render InviteUser, DeleteUser */}
             </form>
         </div>
-        <div>
-            {/* ManageUsers */}
-            {/* Avatars */}
+
+        <div  className="flex max-w-6xl mx-auto justify-between items-center mb-5">
+          <ManageUsers />
+          <Avatars />
         </div>
+
         <hr className="pb-10" />
         <Editor />  
         {/* Collaborative editor */}

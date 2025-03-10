@@ -136,9 +136,9 @@ function Sidebar() {
       </Sheet>
       </div>
       
-    <div className="hidden md:inline">
-      {menuOptions}
-    </div>
+      <div className="hidden md:inline">
+        {menuOptions}
+      </div>
     </div> 
   )
 }

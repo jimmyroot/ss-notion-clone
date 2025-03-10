@@ -2,6 +2,7 @@
 
 import {
     Dialog,
+    DialogClose,
     DialogContent,
     DialogDescription,
     DialogFooter,
@@ -12,7 +13,6 @@ import {
 
 import { startTransition, useState, useTransition } from "react"
 import { Button } from "./ui/button"
-import { DialogClose } from "@radix-ui/react-dialog"
 import { usePathname } from "next/navigation"
 import { useRouter } from "next/navigation"
 import { deleteDocument } from "@/actions/actions"

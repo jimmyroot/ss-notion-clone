@@ -12,6 +12,7 @@ import "@blocknote/core/fonts/inter.css"
 import "@blocknote/shadcn/style.css"
 import stringToColor from "@/lib/stringToColor"
 import { Button } from "./ui/button"
+import TranslateDocument from "./TranslateDocument"
  
 type EditorProps = {
     doc: Y.Doc;
@@ -71,6 +72,7 @@ function Editor() {
         <div className="flex items-center gap-2 justify-end mb-10">
 
             {/* Translate document (AI) */}
+            <TranslateDocument doc={doc} />
             {/* Chat to document (AI) */}
             {/* Dark mode button */}
             <Button className={style}  onClick={() => setDarkMode(!darkMode)}>

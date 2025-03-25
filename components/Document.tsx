@@ -65,7 +65,7 @@ function Document({ id }: { id: string }) {
           <Avatars />
         </div>
 
-        <hr className="pb-10" />
+        <hr className="pb-10" />  
         <Editor />  
         {/* Collaborative editor */}
     </div>

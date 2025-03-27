@@ -11,10 +11,8 @@ import {
     DialogTrigger,
   } from "@/components/ui/dialog"
 
-import { FormEvent, startTransition, useState, useTransition } from "react"
+import { FormEvent, useState, useTransition } from "react"
 import { Button } from "./ui/button"
-import { usePathname, useRouter } from "next/navigation"
-import { deleteDocument } from "@/actions/actions"
 import { toast } from "sonner"
 import { Input } from "./ui/input"
 import * as Y from 'yjs'
